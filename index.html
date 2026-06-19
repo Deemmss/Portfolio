@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Soren Miguet, étudiant en maintenance industrielle, industrie 4.0 et informatique." />
+  <title>Soren Miguet | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav-shell" aria-label="Navigation principale">
+      <a class="logo" href="#top" aria-label="Retour en haut">Soren<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#experience">Expériences</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero-content" id="top">
+      <p class="eyebrow">Prépa ATS · Maintenance industrielle · Cyber / IA</p>
+      <h1>Relier le terrain industriel au numérique.</h1>
+      <p class="hero-lead">
+        Je suis Soren Miguet. Je construis un profil à la croisée de la maintenance,
+        de l’industrie 4.0 et de l’informatique, avec l’objectif d’intégrer une école
+        d’ingénieurs en alternance.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">Découvrir mes projets</a>
+        <a href="#contact" class="btn secondary">Me contacter</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section narrow-section">
+      <p class="section-kicker">Mon parcours</p>
+      <h2>À propos</h2>
+      <p>
+        Après un BTS Maintenance des Systèmes de Production en alternance chez Colas,
+        j’ai poursuivi avec un Bachelor Maintenance Avancée 4.0 chez Virbac. J’ai ensuite
+        intégré une prépa ATS pour préparer la suite de mon parcours en école d’ingénieurs.
+      </p>
+    </section>
+
+    <section id="experience" class="section">
+      <p class="section-kicker">Expérience professionnelle</p>
+      <h2>Du diagnostic terrain à l’industrie 4.0</h2>
+      <div class="cards cards-two">
+        <article class="card">
+          <p class="card-label">Alternance · BTS MSP</p>
+          <h3>Colas</h3>
+          <p>
+            Maintenance préventive et corrective sur des équipements industriels,
+            diagnostic de pannes et interventions techniques sur site de production.
+          </p>
+          <ul class="tag-list" aria-label="Compétences associées">
+            <li>Maintenance</li><li>Diagnostic</li><li>Industrie</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card-label">Bachelor · Maintenance avancée 4.0</p>
+          <h3>Virbac</h3>
+          <p>
+            Projet de maintenance prédictive appliqué à un équipement pharmaceutique,
+            de l’analyse de criticité à la supervision de données terrain.
+          </p>
+          <ul class="tag-list" aria-label="Compétences associées">
+            <li>Industrie 4.0</li><li>IoT</li><li>AMDEC</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-contrast">
+      <p class="section-kicker">Études de cas</p>
+      <h2>Projets</h2>
+
+      <a class="featured-project" href="virbac.html" aria-label="Voir le projet Virbac en détail">
+        <div class="featured-copy">
+          <p class="card-label">Projet de fin d’année · Virbac</p>
+          <h3>Maintenance prédictive d’une pompe à anneaux liquides</h3>
+          <p>
+            Analyse des défaillances, sélection de capteurs de pression et de vibration,
+            puis conception d’une chaîne de supervision LoRaWAN / MQTT.
+          </p>
+          <span class="text-link">Voir l’étude de cas et les documents <span aria-hidden="true">→</span></span>
+        </div>
+        <div class="featured-visual" aria-hidden="true">
+          <span class="signal signal-one"></span>
+          <span class="signal signal-two"></span>
+          <span class="signal signal-three"></span>
+          <strong>AMDEC</strong>
+          <strong>Capteurs</strong>
+          <strong>Monitoring</strong>
+        </div>
+      </a>
+
+      <div class="cards project-grid">
+        <article class="card">
+          <p class="card-label">Web</p>
+          <h3>Portfolio personnel</h3>
+          <p>Conception et mise en ligne de ce site avec GitHub Pages.</p>
+          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+        <article class="card muted-project">
+          <p class="card-label">En cours</p>
+          <h3>Scanner réseau Python</h3>
+          <p>Outil simple d’analyse d’un réseau local et d’identification des machines connectées.</p>
+          <ul class="tag-list"><li>Python</li><li>Réseau</li><li>Cybersécurité</li></ul>
+        </article>
+        <article class="card muted-project">
+          <p class="card-label">En cours</p>
+          <h3>Générateur de mots de passe</h3>
+          <p>Génération de mots de passe sécurisés selon plusieurs critères configurables.</p>
+          <ul class="tag-list"><li>Python</li><li>Sécurité</li><li>Automatisation</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section-kicker">Savoir-faire</p>
+      <h2>Compétences</h2>
+      <div class="skills">
+        <span>Python</span><span>HTML / CSS</span><span>JavaScript</span>
+        <span>Git / GitHub</span><span>Linux</span><span>Réseaux</span>
+        <span>Maintenance industrielle</span><span>Diagnostic de panne</span>
+        <span>Électricité industrielle</span><span>Cybersécurité</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="section-kicker">Échangeons</p>
+      <h2>Un projet, une alternance, une idée ?</h2>
+      <p>Tu peux me contacter directement par email ou retrouver mon travail sur GitHub.</p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:miguetsoren1407@gmail.com">M’écrire</a>
+        <a class="btn secondary" href="https://github.com/Deemmss" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Soren Miguet · Portfolio personnel</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

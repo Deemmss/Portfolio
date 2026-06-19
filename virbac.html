@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Étude de cas Virbac : mise en place d’une maintenance prédictive sur une pompe à anneaux liquides." />
+  <title>Projet Virbac | Soren Miguet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero project-header">
+    <nav class="nav-shell" aria-label="Navigation du projet">
+      <a class="logo" href="index.html">Soren<span>.</span></a>
+      <a class="back-link" href="index.html#projects">← Retour aux projets</a>
+    </nav>
+
+    <div class="project-hero">
+      <p class="eyebrow">Virbac · Bachelor Maintenance Avancée 4.0</p>
+      <h1>Maintenance prédictive d’une pompe à anneaux liquides</h1>
+      <p class="hero-lead">
+        Passer d’une maintenance principalement corrective et préventive à une surveillance
+        conditionnelle fondée sur des données de pression et de vibration en temps réel.
+      </p>
+      <div class="project-meta">
+        <span><strong>Période</strong> · novembre 2024 — juin 2025</span>
+        <span><strong>Contexte</strong> · site pharmaceutique, Carros</span>
+        <span><strong>Rôle</strong> · analyse, choix techniques, intégration</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section project-intro">
+      <div>
+        <p class="section-kicker">Le défi</p>
+        <h2>Anticiper une défaillance avant l’arrêt de production</h2>
+      </div>
+      <p class="lead">
+        La pompe génère le vide nécessaire au cycle de lyophilisation. Sans capteurs intégrés,
+        les premiers signes de cavitation, de perte de performance ou d’usure mécanique restent
+        difficiles à détecter. Le projet vise donc à rendre son état observable et exploitable
+        par les équipes de maintenance.
+      </p>
+    </section>
+
+    <section class="section section-contrast">
+      <p class="section-kicker">Repères</p>
+      <h2>Un équipement critique, trois paramètres prioritaires</h2>
+      <div class="stat-grid">
+        <div class="stat"><strong>64</strong><span>criticité maximale relevée par l’AMDEC</span></div>
+        <div class="stat"><strong>33–300</strong><span>mbar, plage typique de fonctionnement</span></div>
+        <div class="stat"><strong>3</strong><span>grandeurs suivies : pression, vibration, température</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-kicker">Démarche</p>
+      <h2>De l’analyse du risque à la supervision</h2>
+      <div class="process">
+        <article><h3>Analyser l’existant</h3><p>Étude du lyophilisateur, de la pompe et des contraintes des cycles SIP.</p></article>
+        <article><h3>Prioriser les risques</h3><p>AMDEC machine et analyse 5M pour identifier les causes et criticités.</p></article>
+        <article><h3>Choisir les capteurs</h3><p>Matrices multicritères pour la pression et l’analyse vibratoire.</p></article>
+        <article><h3>Superviser</h3><p>Transmission des données et création d’une surveillance exploitable en temps réel.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-contrast">
+      <p class="section-kicker">Solution retenue</p>
+      <h2>Une chaîne de données de la pompe jusqu’au monitoring</h2>
+      <div class="architecture">
+        <article><small>Mesurer</small><h3>PIM694 + Bob Assistant</h3><p>Pression, cavitation et comportement vibratoire.</p></article>
+        <article><small>Transmettre</small><h3>Passerelle LoRaWAN</h3><p>Communication sans fil adaptée à l’environnement industriel.</p></article>
+        <article><small>Échanger</small><h3>Protocole MQTT</h3><p>Remontée légère et continue des données machine.</p></article>
+        <article><small>Décider</small><h3>Kheiron Web</h3><p>Visualisation, historique et alertes pour la maintenance.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-kicker">Analyses</p>
+      <h2>AMDEC machine</h2>
+      <div class="gallery">
+        <figure class="figure-card">
+          <a href="assets/virbac/amdec.png" target="_blank" rel="noreferrer">
+            <img src="assets/virbac/amdec.png" alt="Tableau AMDEC de la pompe à anneaux liquides, avec les modes de défaillance et leur criticité" loading="lazy" />
+          </a>
+          <figcaption>Les risques les plus élevés concernent notamment la cavitation et les fuites internes, avec une criticité pouvant atteindre 64.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-contrast">
+      <p class="section-kicker">Choix techniques</p>
+      <h2>Comparaison des solutions de mesure</h2>
+      <div class="gallery gallery-two">
+        <figure class="figure-card">
+          <a href="assets/virbac/matrice-capteur-pression.png" target="_blank" rel="noreferrer">
+            <img src="assets/virbac/matrice-capteur-pression.png" alt="Matrice de choix du capteur de pression PIM694" loading="lazy" />
+          </a>
+          <figcaption>Le PIM694 obtient 21/25 grâce à sa précision et à sa capacité d’alerte en cas de cavitation.</figcaption>
+        </figure>
+        <figure class="figure-card">
+          <a href="assets/virbac/matrice-capteur-vibration.png" target="_blank" rel="noreferrer">
+            <img src="assets/virbac/matrice-capteur-vibration.png" alt="Matrice de choix du capteur de vibration Bob Assistant" loading="lazy" />
+          </a>
+          <figcaption>Bob Assistant obtient 22/25 et combine détection, intelligence embarquée et intégration IoT.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="documents">
+      <p class="section-kicker">Livrables</p>
+      <h2>Consulter les documents du projet</h2>
+      <div class="documents-grid">
+        <a class="document-card" href="assets/virbac/rapport-projet.docx" download>
+          <span class="file-icon">DOCX</span><span><strong>Rapport complet du projet</strong>Document Word · 3,9 Mo</span>
+        </a>
+        <a class="document-card" href="assets/virbac/analyse-5m.pdf" target="_blank" rel="noreferrer">
+          <span class="file-icon">PDF</span><span><strong>Analyse des causes — 5M</strong>Document PDF · 32 Ko</span>
+        </a>
+        <a class="document-card" href="assets/virbac/amdec.png" target="_blank" rel="noreferrer">
+          <span class="file-icon">PNG</span><span><strong>AMDEC machine</strong>Image haute définition</span>
+        </a>
+        <a class="document-card" href="assets/virbac/matrice-capteur-pression.png" target="_blank" rel="noreferrer">
+          <span class="file-icon">PNG</span><span><strong>Matrice — capteur de pression</strong>Comparatif multicritère</span>
+        </a>
+        <a class="document-card" href="assets/virbac/matrice-capteur-vibration.png" target="_blank" rel="noreferrer">
+          <span class="file-icon">PNG</span><span><strong>Matrice — capteur de vibration</strong>Comparatif multicritère</span>
+        </a>
+      </div>
+
+      <object class="pdf-frame" data="assets/virbac/analyse-5m.pdf" type="application/pdf" aria-label="Aperçu du diagramme des 5M">
+        <p>Ton navigateur ne peut pas afficher ce PDF. <a href="assets/virbac/analyse-5m.pdf">Ouvrir le document 5M</a>.</p>
+      </object>
+      <p class="confidentiality-note">Les identifiants de connexion présentés dans le rapport ont été remplacés pour préserver la confidentialité des données industrielles.</p>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Soren Miguet · <a href="index.html">Retour au portfolio</a></p></footer>
+</body>
+</html>
